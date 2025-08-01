@@ -1,0 +1,13 @@
+# Neovim swap files
+    *.swp
+    *.swo
+    *.swn
+    *.bak
+    *~
+
+    # MacOS specific files
+    .DS_Store
+
+    # Any specific build/cache directories you might have
+    # .cache/
+    # build/
