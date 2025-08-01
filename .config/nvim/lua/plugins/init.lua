@@ -3,9 +3,12 @@ return {
   {
     "nvim-lua/plenary.nvim"
   },
-                                                    -- Treesitter (highlight dan indent pintar)
-  {                                                   "nvim-treesitter/nvim-treesitter",
-    build = ":TSUpdate",                              config = function()
+
+  -- Treesitter (highlight dan indent pintar)
+  {
+    "nvim-treesitter/nvim-treesitter",
+    build = ":TSUpdate",
+    config = function()
       require("nvim-treesitter.configs").setup({
         ensure_installed = { "html", "css", "javascript" },
         highlight = { enable = true },
@@ -34,3 +37,4 @@ return {
     end,
   },
 }
+
