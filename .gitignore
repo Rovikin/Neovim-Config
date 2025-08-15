@@ -1,13 +1,34 @@
-# Neovim swap files
-    *.swp
-    *.swo
-    *.swn
-    *.bak
-    *~
+# --- Security Critical Files ---
+# GitHub CLI config (contains tokens)
+.config/gh/
+.config/github-copilot/
 
-    # MacOS specific files
-    .DS_Store
+# --- Neovim ---
+# Swap/backup files
+*.swp
+*.swo
+*.swn
+*.bak
+*~
 
-    # Any specific build/cache directories you might have
-    # .cache/
-    # build/
+# Lock files (auto-generated)
+lazy-lock.json
+package-lock.json
+
+# Runtime files
+.spell/
+.undo/
+plugin/
+pack/
+
+# --- System ---
+# macOS
+.DS_Store
+
+# Termux
+.termux/
+
+# --- Build/Cache ---
+.cache/
+build/
+node_modules/
